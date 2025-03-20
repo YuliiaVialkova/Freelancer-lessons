@@ -1,0 +1,66 @@
+@import url(reset.css);
+
+* {
+    color:#100f0f;
+}
+p {
+    color:#4c0573;
+}
+
+ol.list > li:first-of-type{
+    color: #ff0000;
+}
+ol.list > li {
+    color: #008000;
+}
+
+ol.list ol > li:first-of-type {
+    color: #0000ff;
+}
+
+ol.list ol > li {
+    color: #ff4500;
+}
+ol.list ol ul > li:first-of-type {
+    color: #4597f7;
+}
+ol.list ol ul > li {
+    color:#5d5d5d;
+}
+
+ol.list ol > li > span {
+    color: #a0f0fc;
+}
+a:hover {
+    color:#81f697;
+}
+header a:visited {
+    color:#b61779;
+}
+h2 + p {
+    color:#7326e6;
+}
+.dream ~ p {
+    color:#a95807;
+}
+.dream ~ p::first-letter {
+    color:#de22c1;
+}
+h2 + p[title^="special"]{
+    color:#de22c1;
+}
+img[src$="jpg"] + p {
+    color:#86060c;
+}
+#item-09 > h2{
+    color:#81f697;
+}
+ol > li:nth-child(3) > h2 {
+    color:#7cef09;
+}
+h1, h2 {
+    color:#aa83e4
+}
+ol > li > h2 {
+    color:#08b872;
+}
