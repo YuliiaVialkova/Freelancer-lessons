@@ -1,0 +1,64 @@
+@import url("reset.css");
+@import url("fonts.css");
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+* {
+    font-family: "Circular Std", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+p {
+    line-height: 1.3;
+}
+header p{
+    font-weight: 500;
+    font-style: italic;
+}
+h1 {
+    font-size: 28px;
+    font-weight: 700;
+    text-decoration: underline;
+    color: rgb(76, 11, 142);
+    text-transform: uppercase;
+}
+h1 > span {
+    font-style: italic;
+    font-size: 28px;
+    font-weight: 700;
+
+}
+h2 {
+    font-size: 24px;
+    font-weight: 500;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    text-decoration-color: #4b2b78;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 7px
+}
+h2 + p {
+    font-style: italic;
+    word-spacing: 13px;
+}
+.section-beginning h3 {
+    font-family: "Pacifico", cursive;
+    font-size: 20px;
+    font-weight: 400;
+    font-style: normal;
+    text-shadow: 5px 10px 5px #a09df3;
+    letter-spacing: 1.3px;
+  }
+
+.ecobazar {
+    color: #808080;
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.5;
+}
+.ecobazar-title + p {
+    color: #1A1A1A;
+    font-size: 20px;
+    font-weight: 500;
+}
