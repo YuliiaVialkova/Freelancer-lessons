@@ -1,0 +1,134 @@
+@import url("reset.css");
+@import url("font.css");
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0.2px;
+    color: #fff;
+}
+.header-container {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.header-logo, .header-menu, .header-menu-item {
+    display: inline-block;
+}
+.header-logo {
+    margin-right: 100px;
+}
+.header-logo-link, .header-logo-link span {
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 1.5;
+    text-shadow: #170ff3 1px 0 10px;
+}
+.header-logo-link span {
+    color: #231F8B
+}
+.header-menu-item a {
+    font-size: 16px;
+    color: #000;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 2px #231F8B;
+    line-height: 1.5;
+    padding: 10px;
+}
+.header-button {
+    display: inline-block;
+    margin-left: 220px;
+    background-color: #5A54F2;
+    padding: 5px;
+}
+.header-button a {
+    font-size: 16px;
+    text-transform: uppercase;
+}
+h1 {
+    text-align: center;
+}
+.advantages {
+    background-color: #231F8B;
+    padding: 100px 0;
+}
+.advantages-container {
+    max-width: 1080px;
+    padding: 0 15px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.advantages-header {
+    width: 74%;
+}
+.advantages-pretitle {
+    font-weight: 700;
+    line-height: 1.7;
+    color: #5A54F2;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+.advantages-title {
+    font-family: "Circular Std", sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+.advantages-text {
+    font-family: "Circular Std", sans-serif;
+    line-height: 1.4;
+}
+.advantages-list {
+    margin-top: 70px;
+}
+.advantages-list-container {
+    font-size: 0;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.advantages-item {
+    display: inline-block;
+    vertical-align: top;
+    width: 22.2%;
+    padding: 35px 40px;
+    margin: 0 15px;
+    background-color: white;
+}
+.item-bottom {
+    margin-top: 50px;
+}
+.advantages-item-img {
+    margin-bottom: 20px;
+}
+.advantages-item-title {
+    font-family: "Circular Std", sans-serif;
+    color: #252B42;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 0.1px;
+    text-transform: capitalize;
+    margin: 20px 0;
+}
+.line {
+    width: 50px;
+    height: 2px;
+    background-color: #E74040;
+    margin: 20px 0;
+}
+.advantages-item-text {
+    font-size: 14px;
+    line-height: 1.4;
+    color: #737373;
+    margin-top: 20px;
+}
+.light-blue-item {
+    background-color: #5A54F2;
+}
+.title-white, .line-white,.text-white{
+    color: #fff;
+} 
