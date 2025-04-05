@@ -70,7 +70,7 @@ h1 {
 }
 
 .about-image img {
-    border-radius: 240px 100px;
+    border-radius: 45% 19% / 43% 18%;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
@@ -82,18 +82,20 @@ h1 {
     padding: 50px 0;
 }
 
-.about-title {
-    font-size: 36px;
-    font-weight: 700;
-    text-transform: uppercase;
-    line-height: 1.2;
-}
 
-.about-subtitle {
+.about-title {
     color: rgba(255, 255, 255, 0.95);
     font-size: 36px;
     font-weight: 300;
     margin-bottom: 42px;
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+
+.about-title span {
+    display: block;
+    font-size: 36px;
+    font-weight: 700;
     text-transform: uppercase;
     line-height: 1.2;
 }
@@ -126,7 +128,7 @@ h1 {
     line-height: 1.2;
     font-style: normal;
     font-weight: 400;
-    margin-bottom: 40px;
+    margin: 40px 0;
 }
 
 .contacts-container {
