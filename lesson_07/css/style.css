@@ -1,0 +1,484 @@
+@import url("reset.css");
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body {
+    min-height: 100%;
+    overflow: auto;
+    font-family: "Inter", sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    color: #000;
+    line-height: 1.2;
+    font-weight: 400;
+}
+
+
+
+/*--------team-----------*/
+.team {
+    background-color: #412672;
+    padding: 60px 0 100px;
+}
+
+.team-container {
+    max-width: 1230px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+h2 {
+    color: #FFF;
+    font-size: 38px;
+    margin-bottom: 30px;
+}
+
+h2>span {
+    font-weight: 700;
+}
+
+.team-members {
+    font-size: 0;
+}
+
+.team-member {
+    display: inline-block;
+    font-size: 15px;
+    padding: 20px;
+    width: 32%;
+    margin-right: 19px;
+    background-color: #fff;
+    box-shadow: 0px 384px 108px 0px rgba(0, 0, 0, 0.00), 0px 246px 98px 0px rgba(0, 0, 0, 0.01), 0px 138px 83px 0px rgba(0, 0, 0, 0.05), 0px 62px 62px 0px rgba(0, 0, 0, 0.09), 0px 15px 34px 0px rgba(0, 0, 0, 0.10);
+    min-height: 474px;
+    vertical-align: middle;
+}
+
+.team-member:hover {
+    background: #FFBE48;
+    box-shadow: 0px 384px 108px 0px rgba(0, 0, 0, 0.00), 0px 246px 98px 0px rgba(0, 0, 0, 0.01), 0px 138px 83px 0px rgba(0, 0, 0, 0.05), 0px 62px 62px 0px rgba(0, 0, 0, 0.09), 0px 15px 34px 0px rgba(0, 0, 0, 0.10);
+}
+
+.team-member>*:not(:last-child) {
+    margin-bottom: 16px;
+}
+
+.team-member:last-child {
+    margin-right: 0px;
+}
+
+.team-member img {
+    min-height: 266px;
+}
+
+.team-member h3 {
+    font-size: 22px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.team-member p {
+    color: #4F4F4F;
+    line-height: 1.26;
+}
+
+.team-member div {
+    color: #FE3F3F;
+}
+
+/* Тільки тому що не вміємо прибити Read more до низу*/
+.team-member:nth-of-type(1) p {
+    margin-bottom: 54px;
+}
+
+.team-member:nth-of-type(3) p {
+    margin-bottom: 35px;
+}
+
+
+
+/*--------advantages-----------*/
+.advantages {
+    background: #FFF;
+    padding: 55px 0;
+}
+
+.advantages-container {
+    max-width: 1400px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.advantages-body {
+    font-size: 0;
+}
+
+.advantages-body>* {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.advantages-text {
+    max-width: 37%;
+    margin-right: 90px;
+}
+
+.advantages-text>*:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.advantages-text h2 {
+    font-size: 34px;
+    color: #412672
+}
+
+.advantages-text h2>span {
+    font-weight: 700;
+}
+
+.advantages-text p {
+    color: #412672;
+    font-size: 22px;
+}
+
+.advantages-text ul li {
+    color: #4F4F4F;
+    font-size: 20px;
+    line-height: 1.3;
+    padding: 12px 0;
+}
+
+.advantages-text ul>li::before {
+    content: url(../img/icon-list.svg);
+    width: 29px;
+    height: 29px;
+    margin-right: 15px;
+    vertical-align: middle;
+}
+
+.advantages-text ul li:hover {
+    text-shadow: 1px 1px 2px #404040;
+}
+
+.advantages-text ul li:hover::before {
+    content: url(../img/icon-list-hover.svg);
+}
+
+/*--------weather-----------*/
+.weather {
+    font-family: "Ubuntu", sans-serif;
+    color: #000;
+    font-weight: 400;
+    font-style: normal;
+    background: #39C;
+    padding: 30px 0;
+    background-image: url(../img/weather/weather-bg.webp);
+    background-attachment: fixed;
+}
+
+.weather-container {
+    max-width: 1215px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.weather h2 {
+    font-weight: 700;
+    color: rgb(174, 242, 213);
+}
+
+.weather h2::before {
+    content: "";
+    background: url(../img/weather/sun-title.png) 0 0 no-repeat;
+    width: 48px;
+    height: 48px;
+    display: none;
+}
+
+.weather h2:hover {
+    text-decoration-line: underline overline;
+    text-decoration-style: dotted;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 7px;
+    text-decoration-color: #FFBE48;
+    background: linear-gradient(0deg, rgba(34, 193, 195, 1) 25%, rgba(253, 187, 45, 1) 94%);
+    background-clip: text;
+    color: transparent;
+    margin-left: -48px;
+}
+
+.weather h2:hover::before {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.weather-list {
+    font-size: 0;
+}
+
+.weather-item {
+    font-size: 18px;
+    padding: 16px;
+    display: inline-block;
+    border: 2px solid #FFF;
+    background: rgba(51, 153, 204, 0.371);
+    text-align: center;
+}
+
+.weather-item:hover {
+    cursor: pointer;
+    box-shadow: inset 10px 10px 20px #fff;
+}
+
+.weather-item h4+p::after {
+    content: "";
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.weather-item:hover h4+p::after {
+    color: yellow;
+}
+
+.weather-item h4.lisbon+p::after {
+    background-image: url(../img/weather/icon-sun.svg);
+}
+
+.weather-item h4.paris+p::after {
+    background-image: url(../img/weather/rain-icon.svg);
+}
+
+.weather-item h4.belgrade+p::after {
+    background-image: url(../img/weather/cloudy-icon.svg);
+}
+
+.weather-item h4.venice+p::after {
+    background-image: url(../img/weather/icon-cloudy.svg);
+}
+
+.weather-item h4.tel-avive+p::after {
+    background-image: url(../img/weather/heat-icon.svg);
+}
+
+.weather-item h4.new-york+p::after {
+    background-image: url(../img/weather/heavy-rain-icon.svg);
+}
+
+.weather-item h4.new-delhi+p::after {
+    background-image: url(../img/weather/thunderstorm-icon.svg);
+}
+
+.weather-list div:nth-child(5n+1) {
+    width: 50%;
+    background: rgba(111, 127, 70, 0.7);
+}
+
+.weather-list>:nth-child(3n+2) {
+    width: 25%;
+    background: rgba(103, 178, 180, 0.7);
+}
+
+.weather-list>:nth-child(3) {
+    width: 25%;
+    background-color: rgba(136, 28, 44, 0.7);
+}
+
+.weather-item:has(span) {
+    width: 25%;
+    background-color: rgba(240, 153, 46, 0.7);
+}
+
+.weather-list>:last-child {
+    width: 100%;
+    background-color: rgba(117, 102, 85, 0.9);
+}
+
+.weather-list>.weather-item>h4 {
+    width: 100%;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+/*--------game-----------*/
+.game {
+    background: #e1cfcf url(../img/bg-game.jpeg) 0 0 / cover no-repeat;
+}
+
+.game h2 {
+    color: #ef7c7c;
+    text-shadow: 5px 5px 8px #5d5d5d;
+    word-spacing: 3px;
+}
+
+.game-container {
+    font-size: 0;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 50px 10px;
+}
+
+.game-start {
+    display: inline-block;
+    width: 80px;
+    height: 60px;
+    padding: 13px;
+    margin-left: 176px;
+    background-color: #FFBE48;
+    text-align: center;
+    font-size: 18px;
+    position: relative;
+    z-index: 1;
+    border: 5px solid #ef7c7c;
+}
+
+.game-start:hover {
+    color: blue;
+    cursor: pointer;
+}
+
+.game-path:hover {
+    visibility: visible;
+}
+
+.game-container div:hover+div:nth-of-type(n+1) {
+    visibility: visible;
+}
+
+.game-path {
+    visibility: hidden;
+    display: inline-block;
+    font-size: 16px;
+    text-align: center;
+    width: 200px;
+    height: 25px;
+
+}
+
+._10 {
+    display: inline-block;
+    margin-left: -16px;
+    background: linear-gradient(to right,
+            #FF6B6B,
+            #FFA94D);
+}
+
+._20 {
+    background: linear-gradient(to bottom,
+            #FFA94D,
+            #FFD43B);
+    height: 185px;
+    width: 20px;
+    margin-left: -1%;
+}
+
+._30 {
+    background: linear-gradient(to right,
+            #FFD43B,
+            #69DB7C);
+    display: block;
+    height: 25px;
+    width: 200px;
+    margin-top: -2%;
+    margin-left: 430px;
+}
+
+._40 {
+    background: linear-gradient(to top,
+            #69DB7C,
+            #38D9A9);
+    display: block;
+    height: 113px;
+    width: 15px;
+    margin-top: -113px;
+    margin-left: 616px;
+    z-index: 1;
+}
+
+._50 {
+    background: linear-gradient(to right,
+            #38D9A9,
+            #4DABF7);
+    display: block;
+    height: 25px;
+    width: 200px;
+    margin-top: -113px;
+    margin-left: 621px;
+}
+
+._60 {
+    background: linear-gradient(to bottom,
+            #4DABF7,
+            #5C7CFA);
+    display: block;
+    height: 150px;
+    width: 17px;
+    margin-top: -20px;
+    margin-left: 804px;
+}
+
+._70 {
+    background: linear-gradient(to left,
+            #5C7CFA,
+            #B197FC);
+    display: block;
+    height: 18px;
+    width: 300px;
+    margin-top: -11px;
+    margin-left: 521px;
+}
+
+._80 {
+    background: linear-gradient(to bottom,
+            #B197FC,
+            #F783AC);
+    display: block;
+    height: 250px;
+    width: 16px;
+    margin-top: -18px;
+    margin-left: 514px;
+}
+
+._90 {
+    background: linear-gradient(to left,
+            #F783AC,
+            #FF6B6B);
+    display: block;
+    height: 18px;
+    width: 100px;
+    margin-top: -9px;
+    margin-left: 430px;
+}
+
+._99 {
+    background: linear-gradient(to bottom,
+            #FF6B6B,
+            #981216);
+    display: block;
+    height: 50px;
+    width: 13px;
+    margin-top: -13px;
+    margin-left: 430px;
+}
+
+.finish {
+    visibility: hidden;
+    display: block;
+    width: 150px;
+    height: 80px;
+    padding: 28px;
+    margin-top: -12px;
+    margin-left: 358px;
+    background-color: #ef7c7c;
+    color: white;
+    font-weight: 900;
+
+}
+
+.finish:hover {
+    outline: 10px solid rgb(221, 206, 119);
+}
