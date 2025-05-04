@@ -260,7 +260,8 @@ h1 {
     max-width: 1260px;
     padding: 0 15px;
     margin: 0 auto;
-
+    position: relative;
+    z-index: 3;
 }
 
 .article__img-wrap {
@@ -330,7 +331,7 @@ h1 {
     object-fit: cover;
     object-position: center;
     width: 430px;
-    height: auto;
+    height: 548px;
     border-radius: 20px;
     overflow: hidden;
 }
@@ -357,6 +358,7 @@ h1 {
 .article__link {
     text-transform: capitalize;
     max-width: 480px;
+    line-height: 1.2;
 }
 
 .article__text {
