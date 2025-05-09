@@ -26,11 +26,12 @@
 .go-to-work__container {
     width: 100vw;
     height: 637px;
+    overflow: clip;
 }
 
-.go-to-work__car {
+.go-to-work__bg {
+    width: 3000px;
     height: inherit;
-    position: relative;
     background: url(../images/city-bg.jpg) 0 0 / contain repeat-x;
     animation: move-city 5s ease-in-out forwards 2s;
 }
@@ -45,33 +46,26 @@
     }
 }
 
-.car__container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
+.car__details {
     position: absolute;
-    bottom: 116px;
-    right: -500px;
+    width: 706px;
+    height: 138px;
+    top: 400px;
+    right: -329px;
     animation: move-car 5s linear forwards 2s;
 }
 
 @keyframes move-car {
     0% {
-        right: -500px
+        right: -329px
     }
 
     100% {
-        right: 1000px;
+        right: 50%;
     }
 }
 
-.car__details {
-    position: relative;
-    width: 706px;
-    height: 138px;
-    top: 0;
-    right: 0;
-}
+
 
 .car__body {
     width: 706px;
@@ -204,8 +198,7 @@
     width: 126px;
     height: 126px;
     border-radius: 50%;
-    animation: rotate-wheel 0.5s linear 8 2s,
-        rotate-wheel 0.9s linear 1 6s;
+    animation: rotate-wheel 0.3s linear 17 2s;
 }
 
 .wheel__rear {
@@ -385,7 +378,7 @@
 }
 
 .go-to-work__arrived {
-    position: relative;
+    position: absolute;
     top: 0;
     left: 22%;
     font-size: 18px;
@@ -412,7 +405,7 @@
         font-weight: 700;
         letter-spacing: 3px;
         opacity: 1;
-        top: 25%;
+        top: 15%;
         color: #1515E8;
         text-shadow: 0 0 10px #1515E8, 0 0 20px #1515E8;
     }
@@ -423,8 +416,8 @@
 }
 
 .go-to-work__greeting {
-    position: relative;
-    top: 25%;
+    position: absolute;
+    top: 15%;
     left: 15%;
 }
 
@@ -519,5 +512,3 @@
         opacity: 1;
     }
 }
-
-/* ------------transition------------- */
