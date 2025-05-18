@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Lesson 14</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <h1>Lesson 14</h1>
+      </header>
+      <main class="page">
+        <section class="checkout">
+          <div class="checkout__container">
+            <form action="#" method="post" class="checkout__form form">
+              <div class="form__user-data user">
+                <fieldset class="form__billing">
+                  <legend class="form__caption">Billing Information</legend>
+                  <div class="user__name user__name--small-width">
+                    <label for="user-name">First name</label>
+                    <input
+                      class="form__input"
+                      id="user-name"
+                      type="text"
+                      name="form[]"
+                      required
+                      placeholder="Your first name"
+                    />
+                  </div>
+                  <div class="user__last-name user__last-name--small-width">
+                    <label for="user-last-name">Last name</label>
+                    <input
+                      class="form__input"
+                      id="user-last-name"
+                      type="text"
+                      name="form[]"
+                      required
+                      placeholder="Your last name"
+                    />
+                  </div>
+                  <div
+                    class="user__company-name user__company-name--small-width"
+                  >
+                    <label for="user-company-name"
+                      >Company name <span>(optional)</span></label
+                    >
+                    <input
+                      class="form__input"
+                      id="user-company-name"
+                      type="text"
+                      name="form[]"
+                      placeholder="Company name"
+                    />
+                  </div>
+                  <div class="user__address user__address--full-width">
+                    <label for="user-address">Address</label>
+                    <input
+                      class="form__input"
+                      id="user-address"
+                      type="text"
+                      name="form[]"
+                      required
+                      placeholder="Address"
+                    />
+                  </div>
+                  <div class="user__country user__country--small-width">
+                    <label for="user-country">Country / Region</label>
+                    <select
+                      class="form__select"
+                      name="form[]"
+                      id="user-country"
+                      required
+                    >
+                      <option value="" disabled selected>Select</option>
+                      <option value="uk">Ukraine</option>
+                      <option value="gb">United Kingdom</option>
+                      <option value="us">The United States</option>
+                    </select>
+                  </div>
+                  <div class="user__states user__states--small-width">
+                    <label for="user-states">States</label>
+                    <select
+                      class="form__select"
+                      name="form[]"
+                      id="user-states"
+                      required
+                    >
+                      <option value="" disabled selected>Selects</option>
+                      <option value="uk">Ukraine</option>
+                      <option value="gb">United Kingdom</option>
+                      <option value="us">The United States</option>
+                    </select>
+                  </div>
+                  <div class="user__zip-code user__zip-code--small-width">
+                    <label for="user-zip-code">Zip Code</label>
+                    <input
+                      class="form__input"
+                      id="user-zip-code"
+                      type="number"
+                      name="form[]"
+                      required
+                      placeholder="Zip Code"
+                    />
+                  </div>
+                  <div class="user__email user__email--average-width">
+                    <label for="user-email">Email</label>
+                    <input
+                      class="form__input form__input--error"
+                      id="user-email"
+                      type="email"
+                      name="form[]"
+                      placeholder="Email"
+                    />
+                  </div>
+                  <div class="user__phone user__phone--average-width">
+                    <label for="user-phone">Phone</label>
+                    <input
+                      class="form__input"
+                      id="user-phone"
+                      type="tel"
+                      name="form[]"
+                      placeholder="Phone Number"
+                    />
+                  </div>
+                  <div
+                    class="user__extra-address user__extra-address--full-width"
+                  >
+                    <input
+                      class="form__input"
+                      type="checkbox"
+                      name="form[]"
+                      id="user-extra-address"
+                    />
+                    <label for="user-extra-address"
+                      >Ship to a different address</label
+                    >
+                  </div>
+                </fieldset>
+                <fieldset class="form__extra-info user">
+                  <legend class="form__caption">Additional Info</legend>
+                  <div class="user__notes">
+                    <label for="user-notes">Order Notes (Optional)</label>
+                    <textarea
+                      class="form__textarea"
+                      name="form[]"
+                      id="user-notes"
+                      placeholder="Notes about your order, e.g. special notes for delivery"
+                    ></textarea>
+                  </div>
+                </fieldset>
+              </div>
+              <div class="form__order order">
+                <fieldset class="order__summary">
+                  <legend class="order__caption">Order Summary</legend>
+                  <div class="order__products">
+                    <div class="order__row">
+                      <a href="#" class="order__link">
+                        <div class="order__img-wrp">
+                          <img
+                            class="order__img"
+                            src="images/content/green-capsicum.jpg"
+                            alt="green capsicum"
+                          />
+                        </div>
+                        <p class="order__title">Green Capsicum</p>
+                        <p class="order__quantity">x5</p>
+                        <p class="order__amount">$70.00</p>
+                      </a>
+                    </div>
+                    <div class="order__row">
+                      <a href="#" class="order__link">
+                        <div class="order__img-wrp">
+                          <img
+                            class="order__img"
+                            src="images/content/red-capsicum.jpg"
+                            alt="red capsicum"
+                          />
+                        </div>
+                        <p class="order__title">Red Capsicum</p>
+                        <p class="order__quantity">x1</p>
+                        <p class="order__amount">$14.00</p>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="order__subtotal">
+                    <p>Subtotal:</p>
+                    <p class="order__amount">$84.00</p>
+                  </div>
+                  <div class="order__shipping">
+                    <p>Shipping:</p>
+                    <p class="order__amount">Free</p>
+                  </div>
+                  <div class="order__total">
+                    <p>Total:</p>
+                    <p class="order__sum">$84.00</p>
+                  </div>
+                </fieldset>
+                <fieldset class="order__payment">
+                  <legend class="order__caption">Payment Method</legend>
+                  <div class="order__pay-options">
+                    <label>
+                      <input type="radio" name="form[payment]" value="cash" />
+                      <p>Cash on Delivery</p>
+                    </label>
+                    <label>
+                      <input type="radio" name="form[payment]" value="paypal" />
+                      <p>Paypal</p>
+                    </label>
+                    <label>
+                      <input type="radio" name="form[payment]" value="amazon" />
+                      <p>Amazon Pay</p>
+                    </label>
+                  </div>
+                </fieldset>
+                <button type="submit">Place Order</button>
+              </div>
+            </form>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">Footer</footer>
+    </div>
+  </body>
+</html>
