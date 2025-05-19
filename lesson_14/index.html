@@ -104,7 +104,7 @@
                     <input
                       class="form__input"
                       id="user-zip-code"
-                      type="number"
+                      type="text"
                       name="form[]"
                       required
                       placeholder="Zip Code"
@@ -118,6 +118,7 @@
                       type="email"
                       name="form[]"
                       placeholder="Email"
+                      required
                     />
                   </div>
                   <div class="user__phone user__phone--average-width">
@@ -128,6 +129,7 @@
                       type="tel"
                       name="form[]"
                       placeholder="Phone Number"
+                      required
                     />
                   </div>
                   <div
@@ -207,7 +209,12 @@
                   <legend class="order__caption">Payment Method</legend>
                   <div class="order__pay-options">
                     <label>
-                      <input type="radio" name="form[payment]" value="cash" />
+                      <input
+                        type="radio"
+                        name="form[payment]"
+                        checked
+                        value="cash"
+                      />
                       <p>Cash on Delivery</p>
                     </label>
                     <label>
