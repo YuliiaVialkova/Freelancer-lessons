@@ -51,20 +51,20 @@ body {
     color: #1A1A1A;
 }
 
-.form__input:invalid {
+.form__input:user-invalid, .form__select:user-invalid {
     outline: 1px solid #EA4B48;
 }
 
-.user__email {
+.form__billing>div {
     position: relative;
 }
 
-.user__email:has(.form__input:invalid)::after {
+.form__billing>div:has(.form__input:user-invalid)::after {
     content: "";
     width: 20px;
     height: 20px;
     position: absolute;
-    top: 33px;
+    top: 36px;
     right: 16px;
     background-image: url(../images/icons/alert-triangle.svg);
 }
@@ -213,7 +213,7 @@ input:focus-visible, select:focus-visible, textarea:focus-visible {
 }
 
 .order__link:focus-visible {
-    outline: none;
+    outline: 1px solid #00B207;
 }
 
 .order__link:hover .order__title {
