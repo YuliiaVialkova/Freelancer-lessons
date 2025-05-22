@@ -34,14 +34,14 @@
 
 /* ------- Button with icon ------- */
 .button-icon {
-    width: 40px;
-    height: 40px;
+    width: 39px;
+    height: 39px;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
     background-color: #F2F2F2;
-    transition: background-color 0.3s;
+    transition: all 0.3s;
 }
 
 .button-icon:not(:has(.icon--bag)) {
@@ -49,13 +49,6 @@
     border: 1px solid #F2F2F2;
 }
 
-.button-icon:hover .icon--bag {
-    color: #fff;
-}
-
-/* .button-icon:hover {
-    background-color: #00B207;
-} */
 
 /* ------- Button with text + icon ------- */
 .button-text-icon {

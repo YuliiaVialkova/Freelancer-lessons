@@ -102,7 +102,7 @@ body {
     gap: 6px;
 }
 
-@media(any-hover: none) {
+@media(hover: none) {
     .button-icon:not(:has(.icon--eye, .icon--heart)) {
         background-color: #00B207;
     }
@@ -112,11 +112,7 @@ body {
     }
 }
 
-@media (any-hover: none) {
-    body {
-        background-color: red !important;
-    }
-}
+
 
 @media(any-hover: hover) {
     .button-icon {
@@ -130,6 +126,39 @@ body {
 
     .icon--bag {
         color: #1A1A1A;
+    }
+
+    .card__link:hover .extra-buttons {
+        opacity: 1;
+        visibility: visible;
+        transition: visibility 0.3s;
+    }
+
+    .card__link:hover .icon--bag {
+        color: #fff;
+    }
+
+    .card__link:hover .button-icon:has(.icon--bag) {
+        background-color: #00B207;
+
+    }
+
+    .card__link:hover .card__caption {
+        color: #2C742F;
+    }
+
+    .button-icon:has(.icon--eye, .icon--heart):hover {
+        cursor: pointer;
+        background-color: #00B207;
+
+    }
+
+    .button-icon:has(.icon--eye):hover .icon--eye {
+        color: #fff;
+    }
+
+    .button-icon:has(.icon--heart):hover .icon--heart {
+        color: #fff;
     }
 }
 
