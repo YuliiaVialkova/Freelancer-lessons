@@ -1,0 +1,94 @@
+/* ------- Icons ------- */
+
+.icon {
+    display: inline-block;
+    flex-shrink: 0;
+    vertical-align: middle;
+}
+
+.icon--arrow {
+    width: 17px;
+    height: 16px;
+    color: #00B307;
+}
+
+.icon--star {
+    width: 12px;
+    height: 12px;
+}
+
+.icon--star-active {
+    color: #FF8A00;
+}
+
+.icon--star-inactive {
+    color: #CCC;
+}
+
+.icon--bag, .icon--heart, .icon--eye {
+    width: 20px;
+    height: 20px;
+    color: #1A1A1A;
+}
+
+
+/* ------- Button with icon ------- */
+.button-icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #F2F2F2;
+    transition: background-color 0.3s;
+}
+
+.button-icon:not(:has(.icon--bag)) {
+    background-color: #fff;
+    border: 1px solid #F2F2F2;
+}
+
+.button-icon:hover .icon--bag {
+    color: #fff;
+}
+
+/* .button-icon:hover {
+    background-color: #00B207;
+} */
+
+/* ------- Button with text + icon ------- */
+.button-text-icon {
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    gap: 12px;
+    color: #00B207;
+    text-transform: capitalize;
+    white-space: nowrap;
+}
+
+/* ------- Header for section ------ */
+.section__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+/* ------- Price ------ */
+.price {
+    font-size: 16px;
+}
+
+.price--new {
+    display: inline-block;
+    margin-right: 2px;
+    font-weight: 500;
+}
+
+.price--old {
+    display: inline-block;
+    color: #999;
+    text-decoration-line: line-through;
+}

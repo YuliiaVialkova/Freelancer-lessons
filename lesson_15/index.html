@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Lesson 15</title>
+  </head>
+  <body>
+    <!-- SVG спрайт -->
+    <div class="svg-sprite">
+      <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+        <symbol id="icon-arrow" viewBox="0 0 17 14" fill="none">
+          <path
+            d="M16 7.00049H1"
+            stroke="currentColor"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M9.94995 0.975586L16 6.99959L9.94995 13.0246"
+            stroke="currentColor"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </symbol>
+        <symbol id="icon-heart" fill="none">
+          <path
+            d="M9.9996 17.5453C-6.66672 8.33354 4.99993 -1.66646 9.9996 4.65692C14.9999 -1.66646 26.6666 8.33354 9.9996 17.5453Z"
+            stroke="currentColor"
+            stroke-width="1.5"
+          />
+        </symbol>
+        <symbol id="icon-eye" fill="none">
+          <path
+            d="M10 3.54102C3.75 3.54102 1.25 10.0001 1.25 10.0001C1.25 10.0001 3.75 16.4577 10 16.4577C16.25 16.4577 18.75 10.0001 18.75 10.0001C18.75 10.0001 16.25 3.54102 10 3.54102V3.54102Z"
+            stroke="currentColor"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M10 13.125C10.8288 13.125 11.6237 12.7958 12.2097 12.2097C12.7958 11.6237 13.125 10.8288 13.125 10C13.125 9.1712 12.7958 8.37634 12.2097 7.79029C11.6237 7.20424 10.8288 6.875 10 6.875C9.1712 6.875 8.37634 7.20424 7.79029 7.79029C7.20424 8.37634 6.875 9.1712 6.875 10C6.875 10.8288 7.20424 11.6237 7.79029 12.2097C8.37634 12.7958 9.1712 13.125 10 13.125V13.125Z"
+            stroke="currentColor"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </symbol>
+        <symbol id="icon-bag" viewBox="0 0 20 20" fill="none">
+          <path
+            d="M6.66667 8.33333H4.16667L2.5 17.5H17.5L15.8333 8.33333H13.3333M6.66667 8.33333V5.83334C6.66667 3.99239 8.15905 2.5 10 2.5V2.5C11.8409 2.5 13.3333 3.99238 13.3333 5.83333V8.33333M6.66667 8.33333H13.3333M6.66667 8.33333V10.8333M13.3333 8.33333V10.8333"
+            stroke="currentColor"
+            stroke-width="1.3"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </symbol>
+        <symbol
+          id="icon-star"
+          width="12"
+          height="12"
+          viewBox="0 0 12 12"
+          fill="none"
+        >
+          <path
+            d="M6.20663 9.44091L8.57101 10.9387C8.87326 11.1299 9.24826 10.8453 9.15863 10.4924L8.47576 7.80553C8.45647 7.73069 8.45869 7.65192 8.48217 7.57829C8.50566 7.50465 8.54945 7.43914 8.60851 7.38928L10.7288 5.62491C11.007 5.39316 10.8638 4.93078 10.5056 4.90753L7.73701 4.72753C7.66246 4.72224 7.59096 4.69589 7.53081 4.65154C7.47066 4.6072 7.42435 4.54668 7.39726 4.47703L6.36451 1.87678C6.33638 1.80288 6.28647 1.73928 6.22137 1.6944C6.15627 1.64952 6.07907 1.62549 6.00001 1.62549C5.92094 1.62549 5.84374 1.64952 5.77864 1.6944C5.71354 1.73928 5.66363 1.80288 5.63551 1.87678L4.60276 4.47703C4.57572 4.54675 4.52943 4.60734 4.46928 4.65176C4.40913 4.69618 4.33759 4.72259 4.26301 4.72791L1.49438 4.90791C1.13663 4.93078 0.992631 5.39316 1.27126 5.62491L3.39151 7.38966C3.4505 7.43948 3.49424 7.50493 3.51772 7.57849C3.54121 7.65205 3.54347 7.73074 3.52426 7.80553L2.89126 10.2974C2.78363 10.7208 3.23401 11.0624 3.59626 10.8325L5.79376 9.44091C5.85552 9.40164 5.92719 9.38078 6.00038 9.38078C6.07357 9.38078 6.14524 9.40164 6.20701 9.44091H6.20663Z"
+            fill="currentColor"
+          />
+        </symbol>
+      </svg>
+    </div>
+    <div class="wrapper">
+      <header class="header">Lesson 15</header>
+      <main class="page">
+        <div class="section">
+          <div class="section__container">
+            <div class="section__header">
+              <h2 class="section__title">Featured Products</h2>
+              <a class="button-text-icon" href="#">
+                <p class="text">View All</p>
+                <svg class="icon icon--arrow">
+                  <use xlink:href="#icon-arrow"></use>
+                </svg>
+              </a>
+            </div>
+            <div class="section__content">
+              <div class="section__catalog">
+                <div class="card">
+                  <a href="#" class="card__link">
+                    <div class="card__img-wrp">
+                      <img
+                        class="card__img"
+                        src="images/content/products/green-apple.png"
+                        alt="green apple"
+                      />
+                    </div>
+                    <div class="extra-buttons">
+                      <div class="button-icon">
+                        <svg class="icon icon--heart">
+                          <use xlink:href="#icon-heart"></use>
+                        </svg>
+                      </div>
+                      <div class="button-icon">
+                        <svg class="icon icon--eye">
+                          <use xlink:href="#icon-eye"></use>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="card__footer">
+                      <div class="card__text">
+                        <div class="card__caption">Green Apple</div>
+                        <div class="card__price price price--new">$14.99</div>
+                        <div class="card__price price price--old">$20.99</div>
+                        <div class="card__rating">
+                          <svg class="icon icon--star icon--star-active">
+                            <use xlink:href="#icon-star"></use>
+                          </svg>
+                          <svg class="icon icon--star icon--star-active">
+                            <use xlink:href="#icon-star"></use>
+                          </svg>
+                          <svg class="icon icon--star icon--star-active">
+                            <use xlink:href="#icon-star"></use>
+                          </svg>
+                          <svg class="icon icon--star icon--star-active">
+                            <use xlink:href="#icon-star"></use>
+                          </svg>
+                          <svg class="icon icon--star icon--star-inactive">
+                            <use xlink:href="#icon-star"></use>
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="button-icon">
+                        <svg class="icon icon--bag">
+                          <use xlink:href="#icon-bag"></use>
+                        </svg>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="card">
+                  <a href="#" class="card__link">
+                    <div class="card__img-wrp">
+                      <img
+                        class="card__img"
+                        src="images/content/products/indian-malta.png"
+                        alt="indian malta"
+                      />
+                    </div>
+                    <div class="card__footer">
+                      <div class="card__text">
+                        <div class="card__caption">Fresh Indian Malta</div>
+                        <div class="card__price price price--new">$20.00</div>
+                        <div class="card__rating">
+                          <svg class="icon icon--star icon--star-active">
+                            <use xlink:href="#icon-star"></use>
+                          </svg>
+                          <svg class="icon icon--star icon--star-active">
+                            <use xlink:href="#icon-star"></use>
+                          </svg>
+                          <svg class="icon icon--star icon--star-active">
+                            <use xlink:href="#icon-star"></use>
+                          </svg>
+                          <svg class="icon icon--star icon--star-active">
+                            <use xlink:href="#icon-star"></use>
+                          </svg>
+                          <svg class="icon icon--star icon--star-inactive">
+                            <use xlink:href="#icon-star"></use>
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="button-icon">
+                        <svg class="icon icon--bag">
+                          <use xlink:href="#icon-bag"></use>
+                        </svg>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="card">
+                  <a href="#" class="card__link">
+                    <div class="card__img-wrp">
+                      <img
+                        class="card__img"
+                        src="images/content/products/chinese-cabbage.png"
+                        alt="Chinese cabbage"
+                      />
+                    </div>
+                    <div class="card__footer">
+                      <div class="card__text">
+                        <div class="card__caption">Chinese cabbage</div>
+                        <div class="card__price price price--new">$20.00</div>
+                        <div class="card__rating">
+                          <svg class="icon icon--star icon--star-active">
+                            <use xlink:href="#icon-star"></use>
+                          </svg>
+                          <svg class="icon icon--star icon--star-active">
+                            <use xlink:href="#icon-star"></use>
+                          </svg>
+                          <svg class="icon icon--star icon--star-active">
+                            <use xlink:href="#icon-star"></use>
+                          </svg>
+                          <svg class="icon icon--star icon--star-active">
+                            <use xlink:href="#icon-star"></use>
+                          </svg>
+                          <svg class="icon icon--star icon--star-inactive">
+                            <use xlink:href="#icon-star"></use>
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="button-icon">
+                        <svg class="icon icon--bag">
+                          <use xlink:href="#icon-bag"></use>
+                        </svg>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="card">
+                  <a href="#" class="card__link">
+                    <div class="card__img-wrp">
+                      <img
+                        class="card__img"
+                        src="images/content/products/green-lettuce.png"
+                        alt="Green Lettuce"
+                      />
+                    </div>
+                    <div class="card__footer">
+                      <div class="card__text">
+                        <div class="card__caption">Green Lettuce</div>
+                        <div class="card__price price price--new">$9.00</div>
+                        <div class="card__rating">
+                          <svg class="icon icon--star icon--star-active">
+                            <use xlink:href="#icon-star"></use>
+                          </svg>
+                          <svg class="icon icon--star icon--star-active">
+                            <use xlink:href="#icon-star"></use>
+                          </svg>
+                          <svg class="icon icon--star icon--star-active">
+                            <use xlink:href="#icon-star"></use>
+                          </svg>
+                          <svg class="icon icon--star icon--star-active">
+                            <use xlink:href="#icon-star"></use>
+                          </svg>
+                          <svg class="icon icon--star icon--star-inactive">
+                            <use xlink:href="#icon-star"></use>
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="button-icon">
+                        <svg class="icon icon--bag">
+                          <use xlink:href="#icon-bag"></use>
+                        </svg>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="card">
+                  <a href="#" class="card__link">
+                    <div class="card__img-wrp">
+                      <img
+                        class="card__img"
+                        src="images/content/products/eggplant.png"
+                        alt="Eggplant"
+                      />
+                    </div>
+                    <div class="card__footer">
+                      <div class="card__text">
+                        <div class="card__caption">Eggplant</div>
+                        <div class="card__price price price--new">$34.00</div>
+                        <div class="card__rating">
+                          <svg class="icon icon--star icon--star-active">
+                            <use xlink:href="#icon-star"></use>
+                          </svg>
+                          <svg class="icon icon--star icon--star-active">
+                            <use xlink:href="#icon-star"></use>
+                          </svg>
+                          <svg class="icon icon--star icon--star-active">
+                            <use xlink:href="#icon-star"></use>
+                          </svg>
+                          <svg class="icon icon--star icon--star-active">
+                            <use xlink:href="#icon-star"></use>
+                          </svg>
+                          <svg class="icon icon--star icon--star-inactive">
+                            <use xlink:href="#icon-star"></use>
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="button-icon">
+                        <svg class="icon icon--bag">
+                          <use xlink:href="#icon-bag"></use>
+                        </svg>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section"></div>
+      </main>
+      <footer class="footer"></footer>
+    </div>
+  </body>
+</html>
