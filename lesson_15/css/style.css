@@ -108,13 +108,19 @@ body {
     }
 
     .icon--bag {
-        color: white;
+        color: #fff;
+    }
+}
+
+@media (any-hover: none) {
+    body {
+        background-color: red !important;
     }
 }
 
 @media(any-hover: hover) {
     .button-icon {
-        background-color: grey;
+        background-color: #F2F2F2;
     }
 
     .extra-buttons {
@@ -123,7 +129,7 @@ body {
     }
 
     .icon--bag {
-        color: black;
+        color: #1A1A1A;
     }
 }
 
