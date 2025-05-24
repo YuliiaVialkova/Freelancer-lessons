@@ -31,6 +31,18 @@
     color: #1A1A1A;
 }
 
+.icon--chapter, .icon--author {
+    width: 20px;
+    height: 20px;
+    color: #B3B3B3;
+}
+
+.icon--comment {
+    width: 18px;
+    height: 18px;
+    color: #B3B3B3;
+}
+
 
 /* ------- Button with icon ------- */
 .button-icon {
@@ -54,11 +66,13 @@
 .button-text-icon {
     font-size: 16px;
     font-weight: 500;
-    display: flex;
-    gap: 12px;
     color: #00B207;
     text-transform: capitalize;
     white-space: nowrap;
+}
+
+.button-text-icon span {
+    margin-right: 12px;
 }
 
 /* ------- Header for section ------ */
@@ -84,4 +98,12 @@
     display: inline-block;
     color: #999;
     text-decoration-line: line-through;
+}
+
+/* ------- Image------ */
+
+img {
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
 }
