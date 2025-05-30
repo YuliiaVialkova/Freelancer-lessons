@@ -1,0 +1,15 @@
+.btn-icon-text {
+    background: url(../images/icons/btn-arrow.svg) no-repeat #F26522;
+    background-position: right 30px center;
+    border-radius: 999px;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+    font-size: 16px;
+    color: #fff;
+    font-weight: 500;
+    line-height: 1.5;
+    text-transform: capitalize;
+    padding: 8px 62px 8px 30px;
+    flex-shrink: 0;
+    scale: 1;
+    transition: all 0.3s;
+}
