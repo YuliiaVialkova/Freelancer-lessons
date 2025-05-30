@@ -127,7 +127,7 @@ body {
 
 @media(any-hover:hover) {
     .header__logo:hover .logo-header__text {
-        transform: scale(1.1);
+        transform: scale(1.05);
     }
 
     .menu-header__link:hover {
