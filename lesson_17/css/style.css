@@ -1,0 +1,227 @@
+@import url(reset.css);
+@import url(components.css);
+@import url('https://fonts.googleapis.com/css2?family=Carme:wght@400&display=swap');
+
+@font-face {
+    font-family: "KoPub Batang";
+    src: url("../fonts/kopubbatang-regular.woff2") format("woff2");
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "KoPub Batang";
+    src: url("../fonts/kopubbatang-light.woff2") format("woff2");
+    font-weight: 300;
+    font-display: swap;
+}
+
+body {
+    font-family: "KoPub Batang";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.2;
+    color: #4E4E4E;
+    background-color: #F8F3EC;
+}
+
+.wrapper {
+    min-height: 100%;
+    overflow: clip;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.page {
+    flex-grow: 1;
+}
+
+[class*="__container"] {
+    max-width: 1230px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.grid {
+    display: grid;
+    column-gap: 30px;
+    row-gap: 30px;
+    align-items: start;
+    grid-template-columns: 33.333% 1fr 1fr;
+    grid-template-rows: 250px repeat(3, auto) 250px;
+    grid-auto-rows: auto;
+    grid-auto-flow: row;
+}
+
+.grid__item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.grid__item--link {
+    align-self: center;
+}
+
+.grid__item {
+    grid-row: span 2;
+}
+
+.grid__item h2 {
+    font-size: 60px;
+    font-weight: 300;
+    color: #000;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.grid__item:nth-child(2) {
+    grid-column: span 2;
+    grid-row: span 1;
+    align-self: center;
+    text-align: center;
+}
+
+.grid__item:nth-child(8) {
+    grid-row: span 1;
+}
+
+.card__img {
+    aspect-ratio: 369 / 378;
+}
+
+.card__img--bigger {
+    aspect-ratio: 401 / 427;
+}
+
+.card__price {
+    font-family: "Carme", sans-serif;
+}
+
+.card__footer {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 14px;
+}
+
+.card__title {
+    color: #2C2C2C;
+    font-size: 20px;
+}
+
+.card__text>*:not(:last-child) {
+    margin-bottom: 14px;
+}
+
+.card__link {
+    background: url(../images/icons/arrow.png) right 30px center / 23px 14px no-repeat #DBCCBA;
+    font-size: 17px;
+    line-height: 1.3;
+    font-weight: 400;
+    color: #2C2C2C;
+    padding: 9px 63px 9px 30px;
+    border: 10px solid #fff;
+    outline: 1px solid #DBCCBA;
+}
+
+.card__actions {
+    flex-shrink: 0;
+}
+
+.actions-card button {
+    margin-left: 20px;
+}
+
+.actions-card__like {
+    background: url(../images/icons/like.png) center / cover no-repeat;
+    width: 23px;
+    height: 23px;
+}
+
+.actions-card__cart {
+    background: url(../images/icons/shopping-cart.png) center / cover no-repeat;
+    width: 23px;
+    height: 23px;
+}
+
+@media (max-width:991.98px) {
+    .grid {
+        column-gap: 20px;
+        row-gap: 20px;
+        grid-template-columns: 45% 1fr;
+        grid-template-rows: 140px repeat(3, auto) 200px;
+    }
+
+    .grid__item:nth-child(2) {
+        grid-row: 1;
+        grid-column: 1 / 3;
+    }
+
+    .grid__item:nth-child(1), .grid__item:nth-child(4), .grid__item:nth-child(6) {
+        padding-top: 40px;
+    }
+
+    .grid__item h2 {
+        font-size: 50px;
+        width: 80%;
+    }
+}
+
+@media (max-width:684.98px) {
+    .grid {
+        grid-template-rows: 200px repeat(3, auto) 200px;
+    }
+
+    .grid__item h2 {
+        width: 90%;
+    }
+
+    .actions-card button {
+        margin-left: 10px;
+    }
+}
+
+@media (max-width:575.98px) {
+    .grid {
+        grid-template-columns: 1fr;
+        row-gap: 30px;
+        grid-template-rows: 150px repeat(3, auto) 200px;
+
+    }
+
+    .grid__item:nth-child(2) {
+        grid-column: 1 / 2;
+    }
+
+    .grid__item:nth-child(1), .grid__item:nth-child(4), .grid__item:nth-child(6) {
+        padding-top: 0px;
+    }
+
+    .catalog__container {
+        padding: 0 30px;
+    }
+
+    .card__link {
+        width: 100%;
+        text-align: center;
+        background-position: right 35% center;
+    }
+
+    .grid__item h2 {
+        font-size: 40px;
+    }
+}
+
+@media (max-width:424.98px) {
+    .grid__item h2 {
+        font-size: 30px;
+    }
+
+    .card__link {
+        background-position: right 30% center;
+    }
+
+
+}
