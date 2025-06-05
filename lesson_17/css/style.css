@@ -212,14 +212,6 @@ body {
     max-height: 533px;
     font-size: 0;
     line-height: 0;
-    container-name: banner;
-    container-type: inline-size;
-}
-
-@container banner (width > 333px) {
-    .link-text-icon {
-        padding: 14px 32px 14px 32px;
-    }
 }
 
 .banner__img-wrp {
