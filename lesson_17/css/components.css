@@ -1,0 +1,70 @@
+.btn-text-icon {
+    font-size: 17px;
+    line-height: 1.3;
+    font-weight: 400;
+    color: #2C2C2C;
+    padding: 9px 63px 9px 30px;
+    border: 10px solid #fff;
+    outline: 1px solid #DBCCBA;
+}
+
+.icon {
+    color: #1A1A1A;
+    width: 20px;
+    height: 20px;
+    transition: color 0.3s
+}
+
+.button-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 39px;
+    height: 39px;
+    border-radius: 50%;
+    border: 1px solid #F2F2F2;
+    background-color: #fff;
+    transition: background-color 0.3s, border 0.3s;
+}
+
+
+.button-icon--bag {
+    background-color: #F2F2F2;
+    transition: background-color 0.3s;
+}
+
+
+.icon--star {
+    width: 12px;
+    height: 12px;
+    color: #E6E6E6;
+}
+
+.icon--arrow {
+    color: #00B307;
+    width: 15px;
+    height: 12px;
+}
+
+.icon--star-active {
+    color: #FF8A00;
+}
+
+.link-text-icon {
+    font-size: 14px;
+    font-weight: 600;
+    color: #00B207;
+    padding: 14px 59px 14px 32px;
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    text-transform: capitalize;
+    align-items: center;
+    border-radius: 43px;
+    background-color: #fff;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.link-text-icon>* {
+    flex-shrink: 0;
+}
