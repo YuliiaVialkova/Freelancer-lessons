@@ -55,7 +55,7 @@
     font-weight: 600;
     color: #00B207;
     padding: 14px 59px 14px 32px;
-    display: flex;
+    display: inline-flex;
     justify-content: space-between;
     gap: 12px;
     text-transform: capitalize;
